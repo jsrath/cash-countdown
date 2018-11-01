@@ -1,0 +1,142 @@
+body {
+  background: url('./background.jpg') no-repeat transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+p {
+  margin: 0;
+}
+
+.axis {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 11px;
+  fill: #333;
+  stroke: none;
+  font-weight: 500;
+}
+
+.axis line {
+  stroke: #ccc;
+}
+
+.axis path {
+  stroke: #ccc;
+}
+
+path {
+  stroke: #333;
+}
+
+text.y.axis.label {
+  transform-origin: 5px 5px;
+}
+
+.tooltip {
+  text-align: center;
+  opacity: 1;
+  width: 150px;
+  white-space: pre;
+  padding: 8px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: top;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+}
+
+.input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.result-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 30px;
+  flex-direction: column;
+}
+
+.input-label {
+  margin: 0 30px;
+}
+
+.result-label {
+  margin: 0 30px 10px;
+}
+
+input[type="text"], .result-box {
+  box-shadow: none;
+  height: 44px;
+  padding: 12px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+}
+
+i {
+  height: 44px;
+  width: 44px;
+  padding: 12px;
+  color: #fff;
+  font-size: 18px;
+  z-index: 2;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  color: #333;
+  margin-right: -1px;
+}
+
+.title {
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-weight: 500;
+  color: #333;
+}
+
+.title-icon {
+  border: none;
+}
+
+.heading {
+  margin-top: 30px;
+  padding: 8px 20px;
+  background-color: #f2f2f2;
+  width: 200px;
+}
+
+.heading h5 {
+  font-weight: 500;
+}
+
+.mainCard {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
