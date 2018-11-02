@@ -94,7 +94,7 @@ class Inputs extends Component {
     };
     return (
       <div className="Inputs">
-        <Container className="m-auto p-5">
+        <Container className="m-auto p-5 container-fluid">
           <Card className="mb-5 mainCard">
             <h3 className="title">
               Cash Countdown
@@ -104,21 +104,21 @@ class Inputs extends Component {
               <h5 className="d-inline w-25">Inputs</h5>
             </span>
             <Row className="mt-4">
-              <div className="col-sm-4 value">
+              <div className="col-lg-4 value">
                 <p className="input-label">Current Cash on Hand</p>
                 <div className="input-container">
                   <Fa icon="money" />
                   <input className="my-2 w-100" type="text" value={this.state.total.toLocaleString()} onChange={this.updateTotal} />
                 </div>
               </div>
-              <div className="col-sm-4 spend">
+              <div className="col-lg-4 spend">
                 <p className="input-label">Monthly Spending</p>
                 <div className="input-container">
                   <Fa icon="share-square-o" />
                   <input className="my-2 w-100" type="text" value={this.state.spend.toLocaleString()} onChange={this.updateSpend} />
                 </div>
               </div>
-              <div className="col-sm-4 income">
+              <div className="col-lg-4 income">
                 <p className="input-label">Monthly Income</p>
                 <div className="input-container">
                   <Fa icon="sign-in" />
@@ -132,21 +132,21 @@ class Inputs extends Component {
             </span>
 
             <Row className="my-4">
-              <div className="col-sm-4">
+              <div className="col-lg-4">
                 <p className="result-label">Months Left</p>
                 <div className="input-container">
                   <Fa icon="calendar" className="result-color" />
                   <p className="result-box w-100">{this.state.monthsLeft}</p>
                 </div>
               </div>
-              <div className="col-sm-4">
+              <div className="col-lg-4">
                 <p className="result-label">Days Left</p>
                 <div className="input-container">
                   <Fa icon="calendar-o" className="result-color" />
                   <p className="result-box w-100">{this.state.daysLeft}</p>
                 </div>
               </div>
-              <div className="col-sm-4">
+              <div className="col-lg-4">
                 <p className="result-label">Cash Runs Out</p>
                 <div className="input-container">
                   <Fa icon="calendar-times-o" className="result-color" />
@@ -157,9 +157,13 @@ class Inputs extends Component {
             <span className="heading graph-color mb-5">
               <h5 className="d-inline w-25">Graph</h5>
             </span>
-            <span onClick={this.showGraph} className="graph-button">
-              Show Graph
-            </span>
+            <Row>
+              <div className="col-lg-4">
+                <div onClick={this.showGraph} className="graph-button">
+                  Show Graph
+                </div>
+              </div>
+            </Row>
             {this.state.graph ? (
               <div className="chart w-100">
                 <LineChart
