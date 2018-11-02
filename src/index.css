@@ -126,6 +126,7 @@ i {
 
 .title-icon {
   border: none;
+  background-color: transparent;
 }
 
 .heading {
