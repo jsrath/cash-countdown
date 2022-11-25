@@ -4,7 +4,7 @@ Track your cash and see when it will run out. Great for travel budgets or any ki
 
 Built in React and d3.js.
 
-Live Site: [https://cashcountdown.herokuapp.com](https://cashcountdown.herokuapp.com)
+Live Site: [https://cash-countdown.onrender.com](https://cashcountdown.onrender.com)
 
 ## Installation
 
